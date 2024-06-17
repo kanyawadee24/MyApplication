@@ -1,11 +1,8 @@
-const Item = () => {
-  const name = "เดินห้าง";
-  const amount = 5000;
-
+const Item = (props) => {
   return (
     <li>
-      {name}
-      <span>-{amount}</span>
+      {props.title}
+      <span>{props.amount}</span>
     </li>
   );
 };
